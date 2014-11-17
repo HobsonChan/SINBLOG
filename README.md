@@ -1,5 +1,5 @@
 #leonote
-<h1>使用nodejs+expressjs+mongoose+jade搭建一个简单的个人网站</h1>
+<h3>使用nodejs+expressjs+mongoose+jade搭建个人网站</h3>
 <strong>本项目的github地址:https://github.com/xulianghhu/leonote.git, 我会在上面持续更新</strong>
 <h3>一、部署项目</h3>
 <ul>
