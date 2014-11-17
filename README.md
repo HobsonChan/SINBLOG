@@ -1,6 +1,7 @@
 #leonote
 <h3>使用nodejs+expressjs+mongoose+jade搭建个人网站</h3>
-<strong>本项目的github地址:https://github.com/xulianghhu/leonote.git, 我会在上面持续更新</strong>
+<strong>本项目的github地址: https://github.com/xulianghhu/leonote.git, 我会在上面持续更新</strong>
+<strong>项目的演示地址: http://120.24.79.209:3000/</strong>
 <h3>一、部署项目</h3>
 <ul>
     <li>安装nodejs和mongodb(这里略过)<br/></li>
