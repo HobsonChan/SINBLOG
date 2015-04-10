@@ -2,7 +2,7 @@ nav(role='navigation').navbar.navbar-inverse.navbar-fixed-top.headroom
 	div.container
 		div.navbar-header
 			a(href='/').navbar-brand
-				b LEONOTE
+				b SIN3BLOG
 			button(type='button',data-toggle='collapse',data-target='.navbar-collapse').navbar-toggle
 				span.icon-bar
 				span.icon-bar
@@ -16,8 +16,7 @@ nav(role='navigation').navbar.navbar-inverse.navbar-fixed-top.headroom
 				li#contact
 					a(href='/feedback') 反馈
 				li#admin
-					if (user && user.role === 1)
-						a(href='/admin') 后台管理
+					a(href='/admin') 管理后台
 			ul.nav.navbar-nav.pull-right
 				if (user)
 					li

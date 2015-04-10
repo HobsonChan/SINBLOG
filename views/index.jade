@@ -15,9 +15,9 @@ html
 			c=q.getContext("2d"),
 			m=Math;
 			setInterval(function(){
-				c.fillStyle="rgba(0,0,0,0.05)";
+				c.fillStyle="rgba(47,47,47,1)";
 				c.fillRect(0,0,w,h);
-				c.fillStyle="rgba(0,255,0,1)";
+				c.fillStyle="rgba(255,51,51,0.95)";
 				p=p.map(function(v,i){
 					c.fillText(String.fromCharCode(m.floor(2720+m.random()*33)),i*10,v);
 					v+=10;

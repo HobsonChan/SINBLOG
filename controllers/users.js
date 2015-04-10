@@ -1,5 +1,5 @@
 /**
- * Created by Leo on 14-11-10.
+ * Created by Sin on 14-11-10.
  */
 
 var mongoose = require('mongoose');
@@ -25,6 +25,7 @@ exports.requireLogin = function (req, res, next) {
  */
 exports.requireAdmin = function (req, res, next) {
 	if (req.session.user && req.session.user.status === 1) {
+		req.session.user.role=1;
 		next();
 	} else {
 		var err = new Error('Forbidden');
@@ -49,8 +50,12 @@ exports.signin = function (req, res) {
 			if (user) {
 				if (user.authenticate(password)) {
 					if (user.status > -1) {
+						if(user.status===1)
+							user.role=1;
 						req.session.user = user;
+					//	console.log(req.session.user.role);
 						response.success(res, url);
+				//	res.redirect('/');
 					} else {
 						response.error(res, new Error('该帐号已被冻结'));
 					}

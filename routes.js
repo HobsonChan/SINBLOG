@@ -1,5 +1,5 @@
 /**
- * Created by Leo on 14-11-10.
+ * Created by Sin on 14-11-10.
  */
 
 var main = require('./controllers/main');
@@ -59,6 +59,19 @@ module.exports = function (app) {
 	app.post('/blogs/:blogId/stick', users.requireAdmin, blogs.stick); // 置顶博客
 
 	app.post('/blogs/:blogId/comments', comments.create); // 添加评论
+
+	app.all('/jsonp',function(req,res){
+		// var callback = req.param('callback');
+		var data = {
+			"name":"chx"
+		};
+		if(req.body.name){
+			console.log('ture');
+		}
+		// var str = callback+'('+JSON.stringify(data)+')';
+		res.jsonp(data);
+		res.end();
+	});
 
 
 };

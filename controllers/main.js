@@ -1,5 +1,5 @@
 /**
- * Created by Leo on 14-11-13.
+ * Created by Sin on 14-11-13.
  */
 var mongoose = require('mongoose');
 var Category = mongoose.model('Category');
@@ -9,7 +9,7 @@ var ep = new eventproxy();
 
 exports.index = function (req, res) {
 	res.render('index', {
-		title: 'LEONOTE'
+		title: 'SIN3BLOG'
 	});
 }
 
