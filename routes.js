@@ -60,18 +60,6 @@ module.exports = function (app) {
 
 	app.post('/blogs/:blogId/comments', comments.create); // 添加评论
 
-	app.all('/jsonp',function(req,res){
-		// var callback = req.param('callback');
-		var data = {
-			"name":"chx"
-		};
-		if(req.body.name){
-			console.log('ture');
-		}
-		// var str = callback+'('+JSON.stringify(data)+')';
-		res.jsonp(data);
-		res.end();
-	});
 
 
 };
